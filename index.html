@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>挚爱抖抖</title>
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url("img/body.gif") no-repeat;
+	background-size: 100% 100%;
+	margin: 0;
+	font-family: Helvetica, sans-serif;;
+	overflow: hidden;
+}
+
+a {
+	color: #ffffff;
+}
+
+#info {
+	position: absolute;
+	width: 100%;
+	color: pink;
+	padding: 5px;
+	font-family: Monospace;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 1;
+}
+
+#menu {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.element {
+	width: 120px;
+	height: 160px;
+	background: url("img/1.jpg") no-repeat;
+	background-size: 100% 100%;
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+	border: 1px solid rgba(127,255,255,0.25);
+	text-align: center;
+	cursor: default;
+}
+.element:nth-of-type(2){
+	background: url("img/2.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.element:nth-of-type(3){
+	background: url("img/3.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(4){
+	background: url("img/4.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(5){
+	background: url("img/5.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(6){
+	background: url("img/6.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(7){
+	background: url("img/7.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(8){
+	background: url("img/8.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(9){
+	background: url("img/9.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(10){
+	background: url("img/10.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.element:nth-of-type(11){
+	background: url("img/11.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.element:nth-of-type(12){
+	background: url("img/12.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+
+.element:nth-of-type(13){
+	background: url("img/13.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(14){
+	background: url("img/14.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(15){
+	background: url("img/15.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(16){
+	background: url("img/16.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(17){
+	background: url("img/17.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(18){
+	background: url("img/18.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(19){
+	background: url("img/19.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(20){
+	background: url("img/20.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(21){
+	background: url("img/21.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(22){
+	background: url("img/22.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(23){
+	background: url("img/23.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(24){
+	background: url("img/24.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(25){
+	background: url("img/25.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(26){
+	background: url("img/26.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(27){
+	background: url("img/27.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(28){
+	background: url("img/28.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(29){
+	background: url("img/29.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(30){
+	background: url("img/30.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(31){
+	background: url("img/31.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(32){
+	background: url("img/32.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(33){
+	background: url("img/33.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(34){
+	background: url("img/34.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(35){
+	background: url("img/35.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(36){
+	background: url("img/36.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(37){
+	background: url("img/37.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(38){
+	background: url("img/38.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(39){
+	background: url("img/39.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(40){
+	background: url("img/40.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(41){
+	background: url("img/41.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(42){
+	background: url("img/42.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(43){
+	background: url("img/43.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(44) {
+	background: url("img/44.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(45) {
+	background: url("img/45.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(46) {
+	background: url("img/46.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(47){
+	background: url("img/47.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(48){
+	background: url("img/48.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(49){
+	background: url("img/49.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(50){
+	background: url("img/50.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(51){
+	background: url("img/51.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(52){
+	background: url("img/52.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(53){
+	background: url("img/53.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(54){
+	background: url("img/54.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(55){
+	background: url("img/55.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(56){
+	background: url("img/56.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(57){
+	background: url("img/57.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(58){
+	background: url("img/58.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(59){
+	background: url("img/59.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(60){
+	background: url("img/60.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(61){
+	background: url("img/61.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(62){
+	background: url("img/62.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(63){
+	background: url("img/63.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(64){
+	background: url("img/64.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(65){
+	background: url("img/65.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(66){
+	background: url("img/66.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(67){
+	background: url("img/67.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(68){
+	background: url("img/68.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(69){
+	background: url("img/69.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(70){
+	background: url("img/70.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(71){
+	background: url("img/71.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(72){
+	background: url("img/72.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(73){
+	background: url("img/73.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(74){
+	background: url("img/74.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(75){
+	background: url("img/75.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(76){
+	background: url("img/76.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(77){
+	background: url("img/77.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(78){
+	background: url("img/78.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(79){
+	background: url("img/79.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(80){
+	background: url("img/80.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(81){
+	background: url("img/81.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(82){
+	background: url("img/82.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(83){
+	background: url("img/83.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(84){
+	background: url("img/84.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(85){
+	background: url("img/85.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(86){
+	background: url("img/86.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(87){
+	background: url("img/87.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(88){
+	background: url("img/88.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(89){
+	background: url("img/89.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(90){
+	background: url("img/90.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(91){
+	background: url("img/91.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(92){
+	background: url("img/92.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(93){
+	background: url("img/93.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(94){
+	background: url("img/94.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(95){
+	background: url("img/95.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(96){
+	background: url("img/96.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(97){
+	background: url("img/97.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(98){
+	background: url("img/98.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(99){
+	background: url("img/99.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(100){
+	background: url("img/100.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(101){
+	background: url("img/102.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(102){
+	background: url("img/102.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(103){
+	background: url("img/103.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(104){
+	background: url("img/104.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(105){
+	background: url("img/105.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(106){
+	background: url("img/106.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(107){
+	background: url("img/107.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(108){
+	background: url("img/108.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(109){
+	background: url("img/109.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(110){
+	background: url("img/110.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(111){
+	background: url("img/111.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(112){
+	background: url("img/112.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(113){
+	background: url("img/113.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(114){
+	background: url("img/114.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(115){
+	background: url("img/115.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(116){
+	background: url("img/116.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(117){
+	background: url("img/117.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:nth-of-type(118){
+	background: url("img/118.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.element:hover {
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+	border: 1px solid rgba(127,255,255,0.75);
+}
+
+	.element .number {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 12px;
+		color: rgba(127,255,255,0.75);
+	}
+
+	.element .symbol {
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		font-size: 60px;
+		font-weight: bold;
+		color: rgba(255,255,255,0.75);
+		text-shadow: 0 0 10px rgba(0,255,255,0.95);
+	}
+
+	.element .details {
+		position: absolute;
+		bottom: 15px;
+		left: 0px;
+		right: 0px;
+		font-size: 12px;
+		color: rgba(127,255,255,0.75);
+	}
+
+button {
+	color: purple;
+	font-weight: 700;
+	background: transparent;
+	outline: 1px solid rgba(127,255,255,0.75);
+	border: 0px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.btn-change {
+	background-color: pink;
+}
+button:hover {
+	background-color: rgba(0,255,255,0.5);
+}
+button:active {
+	color: #000000;
+	background-color: rgba(0,255,255,0.75);
+}
+</style>
+</head>
+<body>
+<script src="js/three.min.js"></script>
+<script src="js/tween.min.js"></script>
+<script src="js/TrackballControls.js"></script>
+<script src="js/CSS3DRenderer.js"></script>
+
+
+<div id="container"></div>
+<div id="info"><span  >一生挚爱</span> - 蒋抖抖  <span>加油！</span></div>
+<div id="menu">
+<button id="table" class="btn-change">一</button>
+<button id="sphere" class="btn-change">生</button>
+<button id="helix" class="btn-change">挚</button>
+<button id="grid" class="btn-change">爱</button>
+</div>
+
+<audio src="1.mp3" autoplay loop></audio>
+<script>
+
+var table = [
+	"", "", "", 1, 1,
+	"", "", "", 18, 1,
+	"", "", "", 1, 2,
+	"", "", "", 2, 2,
+	"", "", "", 13, 2,
+	"", "", "", 14, 2,
+	"", "", "", 15, 2,
+	"", "", "", 16, 2,
+	"", "", "", 17, 2,
+	"", "", "", 18, 2,
+	"", "", ".", 1, 3,
+	"", "", "", 2, 3,
+	"", "", "", 13, 3,
+	"", "", "", 14, 3,
+	"", "", "", 15, 3,
+	"", "", "", 16, 3,
+	"", "", "", 17, 3,
+	"", "", "", 18, 3,
+	"", "", "", 1, 4,
+	"", "", "", 2, 4,
+	"", "", "", 3, 4,
+	"", "", "", 4, 4,
+	"", "", "", 5, 4,
+	"", "", "", 6, 4,
+	"", "", "", 7, 4,
+	"", "", "", 8, 4,
+	"", "", "", 9, 4,
+	"", "", "", 10, 4,
+	"", "", "", 11, 4,
+	"", "", "", 12, 4,
+	"", "", "", 13, 4,
+	"", "", "", 14, 4,
+	"", "", "", 15, 4,
+	"", "", "", 16, 4,
+	"", "", "", 17, 4,
+	"", "", "", 18, 4,
+	"", "", "", 1, 5,
+	"", "", "", 2, 5,
+	"", "", "", 3, 5,
+	"", "", "", 4, 5,
+	"", "", "", 5, 5,
+	"", "", "", 6, 5,
+	"", "", "", 7, 5,
+	"", "", "", 8, 5,
+	"", "", "", 9, 5,
+	"", "", "", 10, 5,
+	"", "", "", 11, 5,
+	"", "", "", 12, 5,
+	"", "", "", 13, 5,
+	"", "", "", 14, 5,
+	"", "", "", 15, 5,
+	"", "", "", 16, 5,
+	"", "", "", 17, 5,
+	"", "", "", 18, 5,
+	"", "", "", 1, 6,
+	"", "", "", 2, 6,
+	"", "", "", 4, 9,
+	"", "", "", 5, 9,
+	"", "", "", 6, 9,
+	"", "", "", 7, 9,
+	"", "", "", 8, 9,
+	"", "", "", 9, 9,
+	"", "", "", 10, 9,
+	"", "", "", 11, 9,
+	"", "", "", 12, 9,
+	"", "", "", 13, 9,
+	"", "", "", 14, 9,
+	"", "", "", 15, 9,
+	"", "", "", 16, 9,
+	"", "", "", 17, 9,
+	"", "", "", 18, 9,
+	"", "", "", 4, 6,
+	"", "", "", 5, 6,
+	"", "", "", 6, 6,
+	"", "", "", 7, 6,
+	"", "", "", 8, 6,
+	"", "", "", 9, 6,
+	"", "", "", 10, 6,
+	"", "", "", 11, 6,
+	"", "", "", 12, 6,
+	"", "", "", 13, 6,
+	"", "", "", 14, 6,
+	"", "", "", 15, 6,
+	"", "", "", 16, 6,
+	"", "", "", 17, 6,
+	"", "", "", 18, 6,
+	"", "", "", 1, 7,
+	"", "", "", 2, 7,
+	"", "", "", 4, 10,
+	"", "", "", 5, 10,
+	"", "", "", 6, 10,
+	"", "", "", 7, 10,
+	"", "", "", 8, 10,
+	"", "", "", 9, 10,
+	"", "", "", 10, 10,
+	"", "", "", 11, 10,
+	"", "", "", 12, 10,
+	"", "", "", 13, 10,
+	"", "", "", 14, 10,
+	"", "", "", 15, 10,
+	"", "", "", 16, 10,
+	"", "", "", 17, 10,
+	"", "", "", 18, 10,
+	"", "", "", 4, 7,
+	"", "", "", 5, 7,
+	"", "", "", 6, 7,
+	"", "", "", 7, 7,
+	"", "", "", 8, 7,
+	"", "", "", 9, 7,
+	"", "", "", 10, 7,
+	"", "", "", 11, 7,
+	"", "", "", 12, 7,
+	"", "", "", 13, 7,
+	"", "", "", 14, 7,
+	"", "", "", 15, 7,
+	"", "", "", 16, 7,
+	"", "", "", 17, 7,
+	"", "", "", 18,7
+]
+
+var camera, scene, renderer;
+var controls;
+
+var objects = [];
+var targets = { table: [], sphere: [], helix: [], grid: [] };
+
+init();
+animate();
+
+function init() {
+
+	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+	camera.position.z = 3000;
+
+	scene = new THREE.Scene();
+
+	// table
+
+	for ( var i = 0; i < table.length; i += 5 ) {
+
+		var element = document.createElement( 'div' );
+		element.className = 'element';
+		element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+
+		var number = document.createElement( 'div' );
+		number.className = 'number';
+		number.textContent = (i/5) + 1;
+		element.appendChild( number );
+
+		var symbol = document.createElement( 'div' );
+		symbol.className = 'symbol';
+		symbol.textContent = table[ i ];
+		element.appendChild( symbol );
+
+		var details = document.createElement( 'div' );
+		details.className = 'details';
+		details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
+		element.appendChild( details );
+
+		var object = new THREE.CSS3DObject( element );
+		object.position.x = Math.random() * 4000 - 2000;
+		object.position.y = Math.random() * 4000 - 2000;
+		object.position.z = Math.random() * 4000 - 2000;
+		scene.add( object );
+
+		objects.push( object );
+
+		//
+
+		var object = new THREE.Object3D();
+		object.position.x = ( table[ i + 3 ] * 140 ) - 1330;
+		object.position.y = - ( table[ i + 4 ] * 180 ) + 990;
+
+		targets.table.push( object );
+
+	}
+
+	// sphere
+
+	var vector = new THREE.Vector3();
+
+	for ( var i = 0, l = objects.length; i < l; i ++ ) {
+
+		var phi = Math.acos( -1 + ( 2 * i ) / l );
+		var theta = Math.sqrt( l * Math.PI ) * phi;
+
+		var object = new THREE.Object3D();
+
+		object.position.x = 800 * Math.cos( theta ) * Math.sin( phi );
+		object.position.y = 800 * Math.sin( theta ) * Math.sin( phi );
+		object.position.z = 800 * Math.cos( phi );
+
+		vector.copy( object.position ).multiplyScalar( 2 );
+
+		object.lookAt( vector );
+
+		targets.sphere.push( object );
+
+	}
+
+	// helix
+
+	var vector = new THREE.Vector3();
+
+	for ( var i = 0, l = objects.length; i < l; i ++ ) {
+
+		var phi = i * 0.175 + Math.PI;
+
+		var object = new THREE.Object3D();
+
+		object.position.x = 900 * Math.sin( phi );
+		object.position.y = - ( i * 8 ) + 450;
+		object.position.z = 900 * Math.cos( phi );
+
+		vector.x = object.position.x * 2;
+		vector.y = object.position.y;
+		vector.z = object.position.z * 2;
+
+		object.lookAt( vector );
+
+		targets.helix.push( object );
+
+	}
+
+	// grid
+
+	for ( var i = 0; i < objects.length; i ++ ) {
+
+		var object = new THREE.Object3D();
+
+		object.position.x = ( ( i % 5 ) * 400 ) - 800;
+		object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
+		object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+
+		targets.grid.push( object );
+
+	}
+
+	//
+
+	renderer = new THREE.CSS3DRenderer();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.domElement.style.position = 'absolute';
+	document.getElementById( 'container' ).appendChild( renderer.domElement );
+
+	//
+
+	controls = new THREE.TrackballControls( camera, renderer.domElement );
+	controls.rotateSpeed = 0.5;
+	controls.minDistance = 500;
+	controls.maxDistance = 6000;
+	controls.addEventListener( 'change', render );
+
+	var button = document.getElementById( 'table' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.table, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'sphere' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.sphere, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'helix' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.helix, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'grid' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.grid, 2000 );
+
+	}, false );
+
+	transform( targets.table, 5000 );
+
+	//
+
+	window.addEventListener( 'resize', onWindowResize, false );
+
+}
+
+function transform( targets, duration ) {
+
+	TWEEN.removeAll();
+
+	for ( var i = 0; i < objects.length; i ++ ) {
+
+		var object = objects[ i ];
+		var target = targets[ i ];
+
+		new TWEEN.Tween( object.position )
+			.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+			.easing( TWEEN.Easing.Exponential.InOut )
+			.start();
+
+		new TWEEN.Tween( object.rotation )
+			.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+			.easing( TWEEN.Easing.Exponential.InOut )
+			.start();
+
+	}
+
+	new TWEEN.Tween( this )
+		.to( {}, duration * 2 )
+		.onUpdate( render )
+		.start();
+
+}
+
+function onWindowResize() {
+
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+
+	renderer.setSize( window.innerWidth, window.innerHeight );
+
+	render();
+
+}
+
+function animate() {
+
+	requestAnimationFrame( animate );
+
+	TWEEN.update();
+
+	controls.update();
+
+}
+
+function render() {
+
+	renderer.render( scene, camera );
+
+}
+
+
+</script>
+
+</body>
+</html>
